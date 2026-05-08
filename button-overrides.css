@@ -1,0 +1,742 @@
+/* Fanlove button authority: loaded after styles.css */
+:root {
+  --final-button-satin: url("./assets/fanlove-cta-lacquer-v1.png");
+  --final-button-soft: url("./assets/fanlove-cta-pearl-v1.png");
+  --final-button-track: url("./assets/fanlove-ui-segment-texture-v3.png");
+  --final-button-ink: #2a2130;
+  --final-button-muted: #675a6e;
+  --final-button-line: rgba(83, 61, 91, 0.2);
+  --final-button-line-strong: rgba(108, 52, 93, 0.38);
+  --final-button-rose: rgba(222, 104, 154, 0.78);
+  --final-button-plum: rgba(166, 93, 194, 0.7);
+  --final-button-coral: rgba(244, 172, 167, 0.52);
+  --final-button-sky: rgba(112, 160, 231, 0.34);
+}
+
+html,
+body {
+  background:
+    linear-gradient(135deg, rgba(255, 242, 249, 0.94) 0%, rgba(251, 228, 242, 0.9) 38%, rgba(236, 246, 255, 0.88) 100%),
+    var(--texture-page-atmosphere) center top / cover no-repeat !important;
+}
+
+.lounge-spotlight,
+.home-console .aside-card,
+.daily-checkin-card,
+.composer-card,
+.community-main > .post-card {
+  border-color: rgba(118, 61, 91, 0.16) !important;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.76), rgba(255, 231, 244, 0.54) 54%, rgba(236, 246, 255, 0.44)),
+    var(--texture-card-surface) center / cover !important;
+  background-blend-mode: screen, soft-light !important;
+}
+
+.primary-button,
+.secondary-button,
+.ghost-button,
+.top-create-button,
+.composer-card a,
+.composer-card button,
+.checkin-actions a,
+.culture-list a,
+.directory-room-card > .secondary-button,
+.room-header-card > .primary-button,
+.feed-tabs a,
+.tab-row a,
+.bottom-nav a.active {
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+  text-shadow: none !important;
+}
+
+.primary-button::before,
+.top-create-button::before,
+.composer-card a::before,
+.bottom-nav a.active::before,
+.feed-tabs a.active::before,
+.tab-row a.active::before,
+.primary-button::after,
+.top-create-button::after,
+.composer-card a::after,
+.bottom-nav a.active::after,
+.feed-tabs a.active::after,
+.tab-row a.active::after {
+  display: none !important;
+}
+
+.primary-button,
+.live-card .primary-button.wide,
+.hero-actions .primary-button,
+.lounge-spotlight-actions .primary-button,
+#promptForm .primary-button.wide {
+  min-height: 35px !important;
+  padding: 0 14px !important;
+  border: 1px solid var(--final-button-line-strong) !important;
+  border-radius: 10px !important;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.48), rgba(255, 255, 255, 0.1) 45%, rgba(70, 33, 70, 0.16)),
+    linear-gradient(110deg, var(--final-button-coral) 0%, var(--final-button-rose) 34%, var(--final-button-plum) 72%, var(--final-button-sky) 100%),
+    var(--final-button-satin) 52% 50% / 180% 220% !important;
+  background-blend-mode: screen, normal, soft-light !important;
+  color: var(--final-button-ink) !important;
+  font-size: 0.82rem !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.58),
+    inset 0 -1px 0 rgba(75, 38, 68, 0.16),
+    0 5px 12px rgba(116, 58, 87, 0.16) !important;
+}
+
+.primary-button:hover,
+.live-card .primary-button.wide:hover,
+.hero-actions .primary-button:hover,
+.lounge-spotlight-actions .primary-button:hover,
+#promptForm .primary-button.wide:hover {
+  border-color: rgba(118, 61, 91, 0.34) !important;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.14) 45%, rgba(70, 33, 70, 0.17)),
+    linear-gradient(110deg, rgba(247, 183, 176, 0.58) 0%, rgba(231, 114, 163, 0.82) 34%, rgba(174, 104, 203, 0.74) 72%, rgba(118, 166, 230, 0.38) 100%),
+    var(--final-button-satin) 50% 50% / 170% 210% !important;
+  background-blend-mode: screen, normal, soft-light !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.62),
+    inset 0 -1px 0 rgba(75, 38, 68, 0.13),
+    0 7px 15px rgba(116, 58, 87, 0.18) !important;
+  transform: translateY(-1px) !important;
+}
+
+.primary-button svg,
+.secondary-button svg,
+.ghost-button svg,
+.top-create-button svg {
+  width: 15px !important;
+  height: 15px !important;
+  stroke-width: 2.2 !important;
+}
+
+.secondary-button,
+.ghost-button,
+.directory-room-card > .secondary-button,
+.room-header-card > .primary-button,
+.hero-actions .secondary-button {
+  min-height: 35px !important;
+  padding: 0 13px !important;
+  border: 1px solid var(--final-button-line) !important;
+  border-radius: 10px !important;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(255, 236, 247, 0.7)),
+    linear-gradient(120deg, rgba(226, 118, 166, 0.18), rgba(166, 93, 194, 0.12) 58%, rgba(112, 160, 231, 0.16)),
+    var(--final-button-soft) center / 210% 230% !important;
+  background-blend-mode: screen, normal, soft-light !important;
+  color: var(--final-button-ink) !important;
+  font-size: 0.82rem !important;
+  font-weight: 780 !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.72),
+    0 2px 6px rgba(73, 48, 64, 0.055) !important;
+}
+
+.secondary-button:hover,
+.ghost-button:hover,
+.directory-room-card > .secondary-button:hover,
+.room-header-card > .primary-button:hover,
+.hero-actions .secondary-button:hover {
+  border-color: var(--final-button-line-strong) !important;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 232, 246, 0.78)),
+    linear-gradient(120deg, rgba(226, 118, 166, 0.22), rgba(166, 93, 194, 0.16) 58%, rgba(112, 160, 231, 0.2)),
+    var(--final-button-soft) center / 200% 220% !important;
+  background-blend-mode: screen, normal, soft-light !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.76),
+    0 4px 10px rgba(73, 48, 64, 0.065) !important;
+  transform: translateY(-1px) !important;
+}
+
+.top-create-button {
+  min-width: 0 !important;
+  min-height: 32px !important;
+  padding: 0 12px !important;
+  border: 1px solid var(--final-button-line) !important;
+  border-radius: 10px !important;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(255, 236, 247, 0.7)),
+    linear-gradient(120deg, rgba(226, 118, 166, 0.2), rgba(166, 93, 194, 0.14), rgba(112, 160, 231, 0.14)),
+    var(--final-button-soft) center / 220% 230% !important;
+  background-blend-mode: screen, normal, soft-light !important;
+  color: var(--final-button-ink) !important;
+  font-size: 0.82rem !important;
+  font-weight: 780 !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.74),
+    0 2px 6px rgba(73, 48, 64, 0.055) !important;
+}
+
+.top-create-button:hover {
+  border-color: rgba(108, 52, 93, 0.32) !important;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(255, 232, 246, 0.76)),
+    linear-gradient(120deg, rgba(226, 118, 166, 0.24), rgba(166, 93, 194, 0.18), rgba(112, 160, 231, 0.16)),
+    var(--final-button-soft) center / 205% 220% !important;
+  background-blend-mode: screen, normal, soft-light !important;
+}
+
+.bottom-nav a.active {
+  border: 1px solid rgba(108, 52, 93, 0.34) !important;
+  border-radius: 15px !important;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.08) 46%, rgba(70, 33, 70, 0.14)),
+    linear-gradient(110deg, rgba(244, 172, 167, 0.48), rgba(222, 104, 154, 0.68) 42%, rgba(166, 93, 194, 0.58), rgba(112, 160, 231, 0.24)),
+    var(--final-button-satin) center / 190% 220% !important;
+  background-blend-mode: screen, normal, soft-light !important;
+  color: var(--final-button-ink) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.58),
+    inset 0 -1px 0 rgba(75, 38, 68, 0.14),
+    0 6px 14px rgba(116, 58, 87, 0.14) !important;
+}
+
+.feed-header > .secondary-button {
+  min-height: 28px !important;
+  padding: 0 2px !important;
+  border-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.feed-header > .secondary-button:hover {
+  background: transparent !important;
+  color: #8a3f64 !important;
+  transform: translateX(1px) !important;
+}
+
+.feed-tabs,
+.tab-row,
+.directory-toolbar .feed-tabs {
+  width: fit-content !important;
+  max-width: 100% !important;
+  gap: 2px !important;
+  padding: 3px !important;
+  border: 1px solid rgba(48, 38, 53, 0.11) !important;
+  border-radius: 12px !important;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(255, 239, 248, 0.42)),
+    linear-gradient(120deg, rgba(226, 118, 166, 0.08), rgba(112, 160, 231, 0.1)),
+    var(--final-button-track) center / 210% 220% !important;
+  background-blend-mode: screen, soft-light !important;
+  box-shadow: none !important;
+}
+
+.feed-tabs a,
+.tab-row a {
+  min-height: 28px !important;
+  padding: 0 11px !important;
+  border: 1px solid transparent !important;
+  border-radius: 8px !important;
+  background: transparent !important;
+  color: var(--final-button-muted) !important;
+  font-size: 0.8rem !important;
+  font-weight: 740 !important;
+  box-shadow: none !important;
+}
+
+.feed-tabs a.active,
+.tab-row a.active {
+  border-color: rgba(118, 61, 91, 0.14) !important;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(255, 236, 247, 0.64)),
+    linear-gradient(120deg, rgba(226, 118, 166, 0.14), rgba(166, 93, 194, 0.1)),
+    var(--final-button-soft) center / 210% 220% !important;
+  background-blend-mode: screen, normal, soft-light !important;
+  color: #443743 !important;
+}
+
+.live-card .primary-button.wide {
+  min-width: 104px !important;
+  min-height: 34px !important;
+}
+
+#promptForm .primary-button.wide {
+  height: 36px !important;
+  max-height: 36px !important;
+  width: auto !important;
+  min-width: 172px !important;
+  justify-self: start !important;
+  align-self: start !important;
+  margin-top: 0 !important;
+}
+
+.composer-card a {
+  width: 32px !important;
+  height: 32px !important;
+  min-height: 32px !important;
+  border: 1px solid rgba(118, 61, 91, 0.16) !important;
+  border-radius: 10px !important;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(255, 238, 248, 0.64)),
+    linear-gradient(120deg, rgba(226, 118, 166, 0.14), rgba(112, 160, 231, 0.12)),
+    var(--final-button-soft) center / 220% 230% !important;
+  background-blend-mode: screen, normal, soft-light !important;
+  color: #594051 !important;
+  box-shadow: none !important;
+}
+
+.composer-card a.composer-submit {
+  width: auto !important;
+  min-width: 76px !important;
+  padding: 0 10px !important;
+  justify-content: center !important;
+  border-color: rgba(118, 61, 91, 0.24) !important;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.48), rgba(255, 255, 255, 0.08) 46%, rgba(70, 33, 70, 0.14)),
+    linear-gradient(110deg, rgba(244, 172, 167, 0.5), rgba(222, 104, 154, 0.72) 42%, rgba(166, 93, 194, 0.64)),
+    var(--final-button-satin) center / 190% 220% !important;
+  background-blend-mode: screen, normal, soft-light !important;
+  color: var(--final-button-ink) !important;
+  font-weight: 820 !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.58),
+    0 4px 10px rgba(116, 58, 87, 0.14) !important;
+}
+
+.composer-card a.composer-submit span {
+  display: inline !important;
+}
+
+.composer-identity {
+  display: inline-flex;
+  min-height: 32px;
+  align-items: center;
+  gap: 7px;
+  padding: 0 10px;
+  border: 1px solid color-mix(in srgb, var(--identity-accent) 28%, rgba(53, 42, 58, 0.16));
+  border-radius: 10px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(255, 240, 248, 0.6)),
+    linear-gradient(120deg, color-mix(in srgb, var(--identity-bg) 48%, transparent), color-mix(in srgb, var(--identity-accent) 12%, transparent));
+  color: var(--final-button-ink);
+  font-size: 0.78rem;
+  font-weight: 850;
+  white-space: nowrap;
+}
+
+.composer-identity-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--identity-accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--identity-accent) 18%, transparent);
+}
+
+.composer-card button,
+.checkin-actions a,
+.culture-list a {
+  min-height: 29px !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: var(--final-button-muted) !important;
+  box-shadow: none !important;
+}
+
+.culture-list a {
+  border-bottom: 1px solid rgba(48, 38, 53, 0.08) !important;
+  border-radius: 0 !important;
+}
+
+@media (max-width: 760px) {
+  .feed-tabs,
+  .tab-row,
+  .directory-toolbar .feed-tabs {
+    width: 100% !important;
+  }
+
+  .feed-tabs a,
+  .tab-row a {
+    flex: 1 1 0 !important;
+    padding-inline: 8px !important;
+  }
+
+  #promptForm .primary-button.wide {
+    width: 100% !important;
+    justify-self: stretch !important;
+  }
+}
+
+/* CTA system v1: soft lacquer controls, loaded as final button authority. */
+:root {
+  --cta-primary-texture: url("./assets/fanlove-cta-lacquer-v1.png");
+  --cta-secondary-texture: url("./assets/fanlove-cta-pearl-v1.png");
+  --cta-track-texture: url("./assets/fanlove-ui-segment-texture-v3.png");
+  --cta-ink: #271f2d;
+  --cta-muted: #6d6072;
+  --cta-rose: #df7fa9;
+  --cta-rose-deep: #c76591;
+  --cta-lilac: #b88bd8;
+  --cta-pearl: rgba(255, 249, 253, 0.9);
+  --cta-line: rgba(117, 72, 102, 0.24);
+  --cta-line-strong: rgba(142, 76, 116, 0.38);
+  --cta-radius: 13px;
+  --cta-radius-compact: 12px;
+  --cta-h: 40px;
+  --cta-h-compact: 36px;
+}
+
+.primary-button,
+.hero-actions .primary-button,
+.lounge-spotlight-actions .primary-button,
+.live-card .primary-button.wide,
+.lab-action-row .primary-button,
+#promptForm .primary-button.wide,
+.button-row .primary-button,
+.directory-header > .primary-button,
+#startFanlove,
+#submitGenerated {
+  position: relative !important;
+  display: inline-flex !important;
+  width: auto !important;
+  min-width: 138px !important;
+  min-height: var(--cta-h) !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 9px !important;
+  padding: 0 16px 0 17px !important;
+  overflow: hidden !important;
+  border: 1px solid var(--cta-line-strong) !important;
+  border-radius: var(--cta-radius) !important;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.48), rgba(255, 255, 255, 0.08) 42%, rgba(112, 42, 82, 0.13)),
+    linear-gradient(90deg, rgba(255, 225, 232, 0.08), rgba(203, 86, 139, 0.18) 50%, rgba(177, 128, 216, 0.12)),
+    var(--cta-primary-texture) 50% 50% / 155% 165% !important;
+  background-blend-mode: screen, multiply, normal !important;
+  color: var(--cta-ink) !important;
+  font-size: 0.88rem !important;
+  font-weight: 860 !important;
+  letter-spacing: 0 !important;
+  line-height: 1 !important;
+  text-shadow: none !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.78),
+    inset 0 -1px 0 rgba(108, 48, 88, 0.16),
+    0 7px 16px rgba(166, 82, 126, 0.15) !important;
+  isolation: isolate;
+  transform: translateZ(0);
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease,
+    filter 160ms ease !important;
+}
+
+.primary-button::before,
+.hero-actions .primary-button::before,
+.lounge-spotlight-actions .primary-button::before,
+.live-card .primary-button.wide::before,
+.lab-action-row .primary-button::before,
+#promptForm .primary-button.wide::before,
+.button-row .primary-button::before,
+.directory-header > .primary-button::before,
+#startFanlove::before,
+#submitGenerated::before {
+  position: absolute !important;
+  inset: 1px !important;
+  z-index: -1 !important;
+  display: block !important;
+  border-radius: calc(var(--cta-radius) - 1px) !important;
+  background:
+    linear-gradient(112deg, rgba(255, 255, 255, 0.38), transparent 35%, rgba(255, 255, 255, 0.18) 72%, transparent),
+    var(--cta-primary-texture) 58% 50% / 145% 160% !important;
+  background-blend-mode: screen, normal !important;
+  content: "" !important;
+  opacity: 0.26 !important;
+  pointer-events: none !important;
+}
+
+.primary-button::after,
+.hero-actions .primary-button::after,
+.lounge-spotlight-actions .primary-button::after,
+.live-card .primary-button.wide::after,
+.lab-action-row .primary-button::after,
+#promptForm .primary-button.wide::after,
+.button-row .primary-button::after,
+.directory-header > .primary-button::after,
+#startFanlove::after,
+#submitGenerated::after {
+  display: none !important;
+}
+
+.primary-button:hover,
+.hero-actions .primary-button:hover,
+.lounge-spotlight-actions .primary-button:hover,
+.live-card .primary-button.wide:hover,
+.lab-action-row .primary-button:hover,
+#promptForm .primary-button.wide:hover,
+.button-row .primary-button:hover,
+.directory-header > .primary-button:hover,
+#startFanlove:hover,
+#submitGenerated:hover {
+  border-color: rgba(136, 73, 111, 0.46) !important;
+  filter: saturate(1.03) contrast(1.01);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.82),
+    inset 0 -1px 0 rgba(108, 48, 88, 0.12),
+    0 10px 20px rgba(166, 82, 126, 0.19) !important;
+  transform: translateY(-1px) !important;
+}
+
+.primary-button:active,
+.hero-actions .primary-button:active,
+.lounge-spotlight-actions .primary-button:active,
+.live-card .primary-button.wide:active,
+.lab-action-row .primary-button:active,
+#promptForm .primary-button.wide:active,
+.button-row .primary-button:active,
+.directory-header > .primary-button:active,
+#startFanlove:active,
+#submitGenerated:active {
+  box-shadow:
+    inset 0 2px 4px rgba(108, 48, 88, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.68),
+    0 5px 12px rgba(166, 82, 126, 0.14) !important;
+  transform: translateY(0) !important;
+}
+
+.primary-button svg,
+.hero-actions .primary-button svg,
+.lounge-spotlight-actions .primary-button svg,
+.lab-action-row .primary-button svg {
+  width: 18px !important;
+  height: 18px !important;
+  padding: 2px !important;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.22);
+  stroke-width: 2.35 !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.42);
+}
+
+.secondary-button,
+.ghost-button,
+.hero-actions .secondary-button,
+.lounge-spotlight-actions .ghost-button,
+.lab-action-row .ghost-button,
+.directory-room-card > .secondary-button,
+.room-header-card > .primary-button,
+.button-row .secondary-button,
+#regenerateConcept,
+#postComment,
+#rewriteSoftly,
+#cancelComment {
+  position: relative !important;
+  display: inline-flex !important;
+  min-height: 40px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 0 16px !important;
+  overflow: hidden !important;
+  border: 1px solid var(--cta-line) !important;
+  border-radius: var(--cta-radius) !important;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 242, 249, 0.72)),
+    linear-gradient(120deg, rgba(221, 128, 166, 0.11), rgba(164, 122, 209, 0.08), rgba(119, 168, 226, 0.1)),
+    var(--cta-secondary-texture) 50% 50% / 175% 185% !important;
+  background-blend-mode: screen, normal, soft-light !important;
+  color: var(--cta-ink) !important;
+  font-size: 0.86rem !important;
+  font-weight: 820 !important;
+  letter-spacing: 0 !important;
+  text-shadow: none !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.78),
+    0 3px 8px rgba(73, 48, 64, 0.06) !important;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease !important;
+}
+
+.secondary-button:hover,
+.ghost-button:hover,
+.hero-actions .secondary-button:hover,
+.lounge-spotlight-actions .ghost-button:hover,
+.lab-action-row .ghost-button:hover,
+.directory-room-card > .secondary-button:hover,
+.room-header-card > .primary-button:hover,
+.button-row .secondary-button:hover,
+#regenerateConcept:hover,
+#postComment:hover,
+#rewriteSoftly:hover,
+#cancelComment:hover {
+  border-color: var(--cta-line-strong) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.82),
+    0 6px 13px rgba(73, 48, 64, 0.09) !important;
+  transform: translateY(-1px) !important;
+}
+
+.lounge-spotlight-actions .primary-button {
+  width: 100% !important;
+  min-width: 0 !important;
+  justify-self: start !important;
+}
+
+.lounge-spotlight-actions .ghost-button {
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+.home-console .lounge-spotlight-actions {
+  display: grid !important;
+  width: min(100%, 176px) !important;
+  grid-template-columns: 1fr !important;
+  gap: 7px !important;
+}
+
+.home-console .lounge-spotlight-actions .primary-button,
+.home-console .lounge-spotlight-actions .ghost-button {
+  min-height: 39px !important;
+  font-size: 0.84rem !important;
+}
+
+.home-console .lounge-spotlight-actions .primary-button {
+  background-position: 54% 50% !important;
+  background-size: 138% 152% !important;
+}
+
+.top-create-button,
+.composer-card a.composer-submit,
+.bottom-nav a.active {
+  min-height: var(--cta-h-compact) !important;
+  border-radius: var(--cta-radius-compact) !important;
+}
+
+@media (max-width: 760px) {
+  .home-console .lounge-spotlight-actions {
+    width: min(100%, 380px) !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .bottom-nav {
+    right: max(8px, env(safe-area-inset-right)) !important;
+    left: max(8px, env(safe-area-inset-left)) !important;
+    width: auto !important;
+    max-width: none !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 4px !important;
+    padding: 6px !important;
+    overflow: hidden !important;
+    border: 1px solid rgba(86, 65, 94, 0.14) !important;
+    border-radius: 22px !important;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 244, 250, 0.84)),
+    var(--cta-secondary-texture) center / 170% 185% !important;
+    background-blend-mode: screen, soft-light !important;
+  }
+
+  .bottom-nav a,
+  .bottom-nav a.active {
+    width: auto !important;
+    min-width: 0 !important;
+    min-height: 42px !important;
+    padding: 5px 2px !important;
+    overflow: hidden !important;
+    border-radius: 15px !important;
+    font-size: 0.66rem !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+  }
+
+  .bottom-nav svg {
+    width: 17px !important;
+    height: 17px !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .home-console .lounge-spotlight-actions {
+    width: 100% !important;
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.composer-card a.composer-submit {
+  min-width: 86px !important;
+  border-color: rgba(136, 73, 111, 0.34) !important;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1) 42%, rgba(97, 45, 81, 0.1)),
+    var(--cta-primary-texture) 50% 50% / 150% 165% !important;
+  background-blend-mode: screen, normal !important;
+}
+
+.top-create-button {
+  border-color: rgba(94, 68, 99, 0.2) !important;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 242, 249, 0.72)),
+    var(--cta-secondary-texture) center / 170% 185% !important;
+  color: var(--cta-ink) !important;
+}
+
+.text-link,
+.section-heading .text-link,
+.bias-shelf-card .text-link,
+.live-queue-head .text-link,
+.board-link {
+  min-height: 28px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: #c24f7f !important;
+  font-size: 0.92rem !important;
+  font-weight: 860 !important;
+  line-height: 1.1 !important;
+  box-shadow: none !important;
+}
+
+.text-link:hover,
+.section-heading .text-link:hover,
+.bias-shelf-card .text-link:hover,
+.live-queue-head .text-link:hover,
+.board-link:hover {
+  color: #943a65 !important;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
+  transform: none !important;
+}
+
+.feed-header > .secondary-button {
+  min-height: 32px !important;
+  padding: 0 2px !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: #493d4d !important;
+  box-shadow: none !important;
+}
+
+.primary-button:focus-visible,
+.secondary-button:focus-visible,
+.ghost-button:focus-visible,
+.top-create-button:focus-visible,
+.composer-card a.composer-submit:focus-visible,
+.text-link:focus-visible {
+  outline: 2px solid rgba(103, 68, 210, 0.42) !important;
+  outline-offset: 3px !important;
+}
+
+@media (max-width: 760px) {
+  .primary-button,
+  .secondary-button,
+  .ghost-button {
+    min-height: 40px !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .lounge-spotlight-actions .primary-button,
+  .lounge-spotlight-actions .ghost-button {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}

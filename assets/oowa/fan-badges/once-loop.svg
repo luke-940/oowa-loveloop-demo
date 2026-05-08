@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <defs>
+    <linearGradient id="pass" x1="16" x2="113" y1="10" y2="116" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset=".55" stop-color="#F8F2FF"/>
+      <stop offset="1" stop-color="#EFFFC6"/>
+    </linearGradient>
+    <linearGradient id="loop" x1="28" x2="100" y1="50" y2="82" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5D05CE"/>
+      <stop offset=".52" stop-color="#8D62FF"/>
+      <stop offset="1" stop-color="#D5FF72"/>
+    </linearGradient>
+  </defs>
+  <rect x="9" y="9" width="110" height="110" rx="28" fill="url(#pass)" stroke="#5D05CE" stroke-width="3"/>
+  <path d="M35 68c0-15.1 12.2-27.3 27.3-27.3h3.4C80.8 40.7 93 52.9 93 68S80.8 95.3 65.7 95.3h-3.4C47.2 95.3 35 83.1 35 68Z" stroke="#21172F" stroke-width="3"/>
+  <path d="M28.5 68c8.4-20.5 25.2-24.7 35.4-8.7 10.4 16.4 27.7 13.3 35.6-7.4" stroke="url(#loop)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M99.5 76.6C91.1 97.1 74.3 101.3 64.1 85.3 53.7 68.9 36.4 72 28.5 92.7" stroke="url(#loop)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M55.2 61.2c2.9-3.2 8-2.6 10.1 1.2 2.1-3.8 7.2-4.4 10.1-1.2 3.2 3.5 1.4 8.7-10.1 16.2-11.5-7.5-13.3-12.7-10.1-16.2Z" fill="#F9F9FA" stroke="#5D05CE" stroke-width="2.6" stroke-linejoin="round"/>
+  <circle cx="40" cy="43" r="4" fill="#D5FF72" stroke="#5D05CE" stroke-width="2"/>
+</svg>

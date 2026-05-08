@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <defs>
+    <linearGradient id="pass" x1="20" x2="108" y1="11" y2="119" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset=".52" stop-color="#F6F0FF"/>
+      <stop offset="1" stop-color="#ECFFD1"/>
+    </linearGradient>
+    <linearGradient id="flash" x1="38" x2="96" y1="93" y2="30" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5D05CE"/>
+      <stop offset=".45" stop-color="#8D62FF"/>
+      <stop offset="1" stop-color="#D5FF72"/>
+    </linearGradient>
+  </defs>
+  <rect x="9" y="9" width="110" height="110" rx="28" fill="url(#pass)" stroke="#5D05CE" stroke-width="3"/>
+  <path d="M28 36h44c13.8 0 24.8 10.9 24.8 24.4 0 14-11.5 25.6-25.6 25.6H38" stroke="#21172F" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M73.5 25 39 68h23.8L51.8 103 91 55.8H67.8L73.5 25Z" fill="url(#flash)" stroke="#21172F" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M34 92c14.2 8.2 34.8 8.5 54 1.4" stroke="#D5FF72" stroke-width="5" stroke-linecap="round"/>
+  <path d="M91 38.5 99 33M94 51h11M85 30.5l3.2-9" stroke="#5D05CE" stroke-width="3" stroke-linecap="round"/>
+</svg>

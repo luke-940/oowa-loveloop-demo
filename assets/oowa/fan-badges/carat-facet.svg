@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <defs>
+    <linearGradient id="pass" x1="14" x2="113" y1="11" y2="116" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset=".56" stop-color="#F4EEFF"/>
+      <stop offset="1" stop-color="#F3FFD3"/>
+    </linearGradient>
+    <linearGradient id="facet" x1="33" x2="95" y1="36" y2="95" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9F9FA"/>
+      <stop offset=".5" stop-color="#EEE2FF"/>
+      <stop offset="1" stop-color="#D5FF72"/>
+    </linearGradient>
+  </defs>
+  <rect x="9" y="9" width="110" height="110" rx="28" fill="url(#pass)" stroke="#5D05CE" stroke-width="3"/>
+  <path d="M36 42.5h56L101 62 64 98 27 62l9-19.5Z" fill="url(#facet)" stroke="#21172F" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M36 42.5 51 62l13-19.5L77 62l15-19.5M27 62h74M51 62l13 36 13-36" stroke="#5D05CE" stroke-width="2.8" stroke-linejoin="round"/>
+  <path d="M22 91c19.8 9.2 46.6 10.1 75.5-3.8" stroke="#D5FF72" stroke-width="5" stroke-linecap="round"/>
+  <path d="m94.5 28 2.2 4.5 5 .7-3.6 3.5.8 5-4.4-2.4-4.4 2.4.8-5-3.6-3.5 5-.7 2.2-4.5Z" fill="#D5FF72" stroke="#5D05CE" stroke-width="1.8" stroke-linejoin="round"/>
+</svg>

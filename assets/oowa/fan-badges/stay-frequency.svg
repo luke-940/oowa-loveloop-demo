@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <defs>
+    <linearGradient id="pass" x1="14" x2="113" y1="12" y2="116" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset=".58" stop-color="#F4EEFF"/>
+      <stop offset="1" stop-color="#E8FFE9"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="28" x2="101" y1="83" y2="42" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5D05CE"/>
+      <stop offset="1" stop-color="#D5FF72"/>
+    </linearGradient>
+  </defs>
+  <rect x="9" y="9" width="110" height="110" rx="28" fill="url(#pass)" stroke="#5D05CE" stroke-width="3"/>
+  <path d="M33 68.5 64 43l31 25.5V96H73.5V76.5h-19V96H33V68.5Z" fill="#F9F9FA" stroke="#21172F" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M24 64.5 64 31l40 33.5" stroke="#5D05CE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M41 57.5c12.4-10.3 33.6-10.3 46 0M48 47.5c8.5-7.1 23.5-7.1 32 0" stroke="url(#wave)" stroke-width="5" stroke-linecap="round"/>
+  <path d="M45 102c15.4 5.4 30.8 5.4 46.2 0" stroke="#D5FF72" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="64" cy="66" r="5" fill="#D5FF72" stroke="#5D05CE" stroke-width="2.4"/>
+</svg>
