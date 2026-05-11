@@ -11,7 +11,7 @@ const STORAGE_KEYS = {
   actions: 'fanlove.localActions',
 };
 
-const ASSET_CACHE_KEY = 'layout-clean-4';
+const ASSET_CACHE_KEY = 'novair-hair-1';
 
 const OOWA_ASSETS = {
   logoEyes: './assets/oowa/original/logo/svg/oowa_logo_secondary.svg',
